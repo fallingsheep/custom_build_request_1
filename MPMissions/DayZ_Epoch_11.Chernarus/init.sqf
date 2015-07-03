@@ -71,6 +71,9 @@ if (!isDedicated) then {
 	
 	//Kill messages
 	execVM "scripts\kill_msg.sqf";
+	
+	//Claim vehicles
+	_nil = [] execVM "scripts\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
 };
 
 #include "\z\addons\dayz_code\system\REsec.sqf"
