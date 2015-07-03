@@ -55,7 +55,9 @@ if (!isDedicated) then {
 	
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
-	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
+	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
+	//ESSV2
+	execVM "spawn\start.sqf";
 	
 	//anti Hack
 	[] execVM "\z\addons\dayz_code\system\antihack.sqf";
@@ -65,6 +67,9 @@ if (!isDedicated) then {
 	
 	//Elevators
 	["elevator"] execVM "scripts\elevator\elevator_init.sqf";
+	
+	//Kill messages
+	execVM "scripts\kill_msg.sqf";
 };
 
 #include "\z\addons\dayz_code\system\REsec.sqf"

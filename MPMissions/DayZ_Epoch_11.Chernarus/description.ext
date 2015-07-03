@@ -162,5 +162,9 @@ class CfgSounds
 	titles[] = {};
 	};
 };
-
+//ESSV2
+#include "spawn\class.hpp"
+#include "spawn\halo.hpp"
+#include "spawn\spawn.hpp"
+//RIGHT CLICK
 #include "fixes\extra_rc.hpp"

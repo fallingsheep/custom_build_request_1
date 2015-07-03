@@ -1,4 +1,16 @@
 class ExtraRc {
+	class ItemKiloHemp {
+        class SmokeWeed {
+            text = "Smoke Weed";
+            script = "execVM ""scripts\HarvestHemp\smokeweed.sqf"";";
+        };
+    };
+	class ItemKnife {
+        class HarvestWeed {
+            text = "Harvest Weed";
+            script = "execVM ""scripts\HarvestHemp\hemp.sqf"";";
+        };
+    };
     class glock17_EP1 {
         class CommitSuicide {
             text = "Commit Suicide";

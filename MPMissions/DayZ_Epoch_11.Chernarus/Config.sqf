@@ -52,6 +52,7 @@ ELE_StopClass = "MetalFloor_Preview_DZ";
 
 DZE_MissionLootTable = true;
 spawnShoremode = 0;
+dayz_spawnselection = 0;
 dayz_paraSpawn = false;
 spawnArea= 1500;
 dayz_minpos = -1; 

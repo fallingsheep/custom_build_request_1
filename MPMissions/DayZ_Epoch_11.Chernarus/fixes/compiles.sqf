@@ -413,7 +413,7 @@ if (!isDedicated) then {
 		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderMenuHive.sqf";
 	};
 	// recent murders menu code
-	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_murderMenu.sqf";
+	call compile preprocessFileLineNumbers "fixes\player_murderMenu.sqf";
 
 	//This is still needed but the fsm should terminate if any errors pop up.
 	[] spawn {
