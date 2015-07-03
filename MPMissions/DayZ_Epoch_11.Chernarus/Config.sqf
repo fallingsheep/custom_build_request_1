@@ -26,6 +26,23 @@ dayz_tameDogs = true;
 //Can player build buildings on roads
 DZE_BuildOnRoads = false;
 
+//Default = true, true to enable, false to disable - wipes backpack on combat/ALT+F4 logging
+DZE_BackpackGuard = false;
+
+//should name tags always be shown
+DZE_ForceNameTagsOff = false;
+
+//use weight system
+DZE_R3F_WEIGHT = false;
+
+DZE_PlotPole = [100,100];
+
+//how many items can a player build	
+DZE_BuildingLimit = 400;
+
+// should players have chance of becoming a ZOMBIE when they respawn after death
+DZE_PlayerZed = false; 
+
 //Can player give themselves bloodbags
 DZE_selfTransfuse = true;
 
@@ -50,7 +67,17 @@ ELE_RequiredBuildItems = [["PartGeneric",4], "PartEngine", "ItemGenerator", "Ite
 ELE_RequiredBuildStopItems = [["PartGeneric",4]];
 ELE_StopClass = "MetalFloor_Preview_DZ";
 
+DZE_StaticConstructionCount = 1;
+DZE_DeathMsgGlobal = true;
+DZE_DeathMsgTitleText = true;
+DZE_DeathMsgSide = true;
+DZE_FriendlySaving = true;
+DZE_TRADER_SPAWNMODE = false;
+DZE_requireplot = 1;
+DZE_LootSpawnTimer = 10;// in minutes
+DZE_teleport = [14000,14000,14000,14000,14000];
 DZE_MissionLootTable = true;
+
 spawnShoremode = 0;
 dayz_spawnselection = 0;
 dayz_paraSpawn = false;
