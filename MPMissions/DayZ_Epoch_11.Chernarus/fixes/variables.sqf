@@ -254,6 +254,7 @@ dayz_resetSelfActions = {
 	
 	s_player_butcher_human = -1;
     s_player_bury_human = -1;
+	s_player_drinkWater = -1;
 };
 call dayz_resetSelfActions;
 

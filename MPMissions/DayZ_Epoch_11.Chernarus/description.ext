@@ -151,3 +151,14 @@ class DayZ_loadingScreen
 		};
 	};
 };
+class CfgSounds
+{
+	sounds[] = {};
+	
+	class drink_water
+	{
+	name="drink_water";
+	sound[]={sounds\drink_water.ogg,1,1};
+	titles[] = {};
+	};
+};
