@@ -42,6 +42,14 @@ dayz_fullMoonNights = true;
 //////////////////////////////////////////////////////////////
 //	DO NOT EDIT BELOW THIS LINE DOING SO CAN BREAK SCRIPTS!	//
 //////////////////////////////////////////////////////////////
+ELE_MaxRange = 100;
+ELE_Speed = 5;
+ELE_StopWaitTime = 0;
+ELE_RequiredBuildTools = ["ItemToolbox", "ItemCrowbar"];
+ELE_RequiredBuildItems = [["PartGeneric",4], "PartEngine", "ItemGenerator", "ItemJerrycan"];
+ELE_RequiredBuildStopItems = [["PartGeneric",4]];
+ELE_StopClass = "MetalFloor_Preview_DZ";
+
 DZE_MissionLootTable = true;
 spawnShoremode = 0;
 dayz_paraSpawn = false;
