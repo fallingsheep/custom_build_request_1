@@ -33,6 +33,7 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functi
 progressLoadingScreen 0.4;
 call compile preprocessFileLineNumbers "fixes\compiles.sqf";									//Load custom compiles
 progressLoadingScreen 0.5;
+call compile preprocessFileLineNumbers "logistic\init.sqf";					// Tow + Lift
 call compile preprocessFileLineNumbers "server_traders.sqf";				//Compile trader configs
 progressLoadingScreen 1.0;
 
