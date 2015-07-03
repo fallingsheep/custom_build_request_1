@@ -1041,7 +1041,7 @@ hasBikeItem = true;
 } else { hasBikeItem = false;};
 if((speed player <= 1) && hasBikeItem && _canDo) then {
 if (s_player_deploybike < 0) then {
-s_player_deploybike = player addaction[("<t color=""#4eff00"">" + ("Deploy Bike") +"</t>"),"deployables\mtbike\deploy.sqf","",5,false,true,"", ""];
+s_player_deploybike = player addaction[("<t color=""#4eff00"">" + ("Deploy Bike") +"</t>"),"scripts\deployables\mtbike\deploy.sqf","",5,false,true,"", ""];
 };
 } else {
 player removeAction s_player_deploybike;
@@ -1051,7 +1051,7 @@ s_player_deploybike = -1;
 //PACK BIKE
 if((_isBike && "ItemToolbox" in _weapons && (player distance cursorTarget < 10)) and _canDo) then {
 if (s_player_deploybike2 < 0) then {
-s_player_deploybike2 = player addaction[("<t color=""#4eff00"">" + ("Re-Pack Bike") +"</t>"),"deployables\mtbike\pack.sqf","",5,false,true,"", ""];
+s_player_deploybike2 = player addaction[("<t color=""#4eff00"">" + ("Re-Pack Bike") +"</t>"),"scripts\deployables\mtbike\pack.sqf","",5,false,true,"", ""];
 };
 } else {
 player removeAction s_player_deploybike2;
@@ -1071,7 +1071,7 @@ hasMopedItem = true;
 } else { hasMopedItem = false;};
 if((speed player <= 1) && hasMopedItem && _canDo) then {
 if (s_player_deploymoped < 0) then {
-s_player_deploymoped = player addaction[("<t color=""#4eff00"">" + ("Deploy Moped") +"</t>"),"deployables\moped\deploy.sqf","",5,false,true,"", ""];
+s_player_deploymoped = player addaction[("<t color=""#4eff00"">" + ("Deploy Moped") +"</t>"),"scripts\deployables\moped\deploy.sqf","",5,false,true,"", ""];
 };
 } else {
 player removeAction s_player_deploymoped;
@@ -1081,7 +1081,7 @@ s_player_deploymoped = -1;
 //PACK MOPED
 if((_isMoped && "ItemToolbox" in _weapons && (player distance cursorTarget < 10)) and _canDo) then {
 if (s_player_deploymoped2 < 0) then {
-s_player_deploymoped2 = player addaction[("<t color=""#4eff00"">" + ("Re-Pack Moped") +"</t>"),"deployables\moped\pack.sqf","",5,false,true,"", ""];
+s_player_deploymoped2 = player addaction[("<t color=""#4eff00"">" + ("Re-Pack Moped") +"</t>"),"scripts\deployables\moped\pack.sqf","",5,false,true,"", ""];
 };
 } else {
 player removeAction s_player_deploymoped2;
@@ -1101,7 +1101,7 @@ hasMozzieItem = true;
 } else { hasMozzieItem = false;};
 if((speed player <= 1) && hasMozzieItem && _canDo) then {
 if (s_player_deploymozzie < 0) then {
-s_player_deploymozzie = player addaction[("<t color=""#4eff00"">" + ("Deploy Mozzie") +"</t>"),"deployables\mozzie\deploy.sqf","",5,false,true,"", ""];
+s_player_deploymozzie = player addaction[("<t color=""#4eff00"">" + ("Deploy Mozzie") +"</t>"),"scripts\deployables\mozzie\deploy.sqf","",5,false,true,"", ""];
 };
 } else {
 player removeAction s_player_deploymozzie;
@@ -1111,7 +1111,7 @@ s_player_deploymozzie = -1;
 //PACK MOZZIE
 if((_isMozzie && "ItemToolbox" in _weapons && (player distance cursorTarget < 10)) and _canDo) then {
 if (s_player_deploymozzie2 < 0) then {
-s_player_deploymozzie2 = player addaction[("<t color=""#4eff00"">" + ("Re-Pack Mozzie") +"</t>"),"deployables\mozzie\pack.sqf","",5,false,true,"", ""];
+s_player_deploymozzie2 = player addaction[("<t color=""#4eff00"">" + ("Re-Pack Mozzie") +"</t>"),"scripts\deployables\mozzie\pack.sqf","",5,false,true,"", ""];
 };
 } else {
 player removeAction s_player_deploymozzie2;
@@ -1131,7 +1131,7 @@ hasBirdItem = true;
 } else { hasBirdItem = false;};
 if((speed player <= 1) && hasBirdItem && _canDo) then {
 if (s_player_deploybird < 0) then {
-s_player_deploybird = player addaction[("<t color=""#4eff00"">" + ("Deploy Little Bird") +"</t>"),"deployables\bird\deploy.sqf","",5,false,true,"", ""];
+s_player_deploybird = player addaction[("<t color=""#4eff00"">" + ("Deploy Little Bird") +"</t>"),"scripts\deployables\bird\deploy.sqf","",5,false,true,"", ""];
 };
 } else {
 player removeAction s_player_deploybird;
@@ -1141,7 +1141,7 @@ s_player_deploybird = -1;
 //PACK BIRD
 if((_isBird && "ItemToolbox" in _weapons && (player distance cursorTarget < 10)) and _canDo) then {
 if (s_player_deploybird2 < 0) then {
-s_player_deploybird2 = player addaction[("<t color=""#4eff00"">" + ("Re-Pack Little Bird") +"</t>"),"deployables\bird\pack.sqf","",5,false,true,"", ""];
+s_player_deploybird2 = player addaction[("<t color=""#4eff00"">" + ("Re-Pack Little Bird") +"</t>"),"scripts\deployables\bird\pack.sqf","",5,false,true,"", ""];
 };
 } else {
 player removeAction s_player_deploybird2;
