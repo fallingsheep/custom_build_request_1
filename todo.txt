@@ -1,0 +1,48 @@
+--------------
+	TODO
+--------------
+banking system
+Door management
+Plot management
+Group management
+Plot 4 Life
+Snap Pro
+Takes clothes
+Vectors
+Vehicle Service points
+Arrest / investigate
+
+
+--------------
+	DONE
+--------------
+Claim vehicle - master key
+Safezones
+Tow + Lift
+Harvest Hemp
+ESSV2
+custom Kill Message
+Suicide
+Deploy vehicle / bike
+elevators
+Slow Zeds
+Drink Water 
+Bury Bodies 
+self bloodbag 
+Cannibalism 
+Custom Loot
+
+BATTLEYE STUFF
+setvariable.txt 
+add to first line !="isburied"
+
+INFISTAR STUFF
+In AHConfig.sqf add 88890 to allowed dialogs:
+_ALLOWED_Dialogs = [-1,106, ... ,88890];
+
+adding "#USER:_keyMenu" in the ALLOWED CMDMenus list (_cMenu=) as cen said is all you need to make this work properly :)
+
+Delete this from AH.sqf:
+lbsetpicture='no';
+Also delete lbsetpicture from the functions restored check (_FRC):
+'lbsetpicture',
