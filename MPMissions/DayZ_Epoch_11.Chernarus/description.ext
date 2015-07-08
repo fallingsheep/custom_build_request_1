@@ -168,3 +168,5 @@ class CfgSounds
 #include "spawn\spawn.hpp"
 //RIGHT CLICK
 #include "fixes\extra_rc.hpp"
+//Snap pro
+#include "scripts\snap_pro\snappoints.hpp"
