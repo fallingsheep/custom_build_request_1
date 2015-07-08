@@ -36,10 +36,6 @@ Cannibalism
 Custom Loot
 
 
-BATTLEYE STUFF
-setvariable.txt 
-add to first line !="isburied"
-
 INFISTAR STUFF
 In AHConfig.sqf add 88890 to allowed dialogs:
 _ALLOWED_Dialogs = [-1,106, ... ,88890];
