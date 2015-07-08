@@ -1,7 +1,7 @@
-//////////////////////////////
-// DayZ Epoch config		//
-//Edited by - Fallingsheep	//
-//////////////////////////////
+//////////////////////////////////
+//	DayZ Epoch  - easy config	//
+//	Created by - Fallingsheep	//
+//////////////////////////////////
 
 //Maximun amount of random vehicle to spawn
 MaxVehicleLimit = 300;
@@ -35,6 +35,7 @@ DZE_ForceNameTagsOff = false;
 //use weight system
 DZE_R3F_WEIGHT = false;
 
+//size o f plot pole building area
 DZE_PlotPole = [100,100];
 
 //how many items can a player build	
@@ -66,6 +67,8 @@ ELE_RequiredBuildTools = ["ItemToolbox", "ItemCrowbar"];
 ELE_RequiredBuildItems = [["PartGeneric",4], "PartEngine", "ItemGenerator", "ItemJerrycan"];
 ELE_RequiredBuildStopItems = [["PartGeneric",4]];
 ELE_StopClass = "MetalFloor_Preview_DZ";
+
+DZE_PlotOwnership = true;
 
 DZE_StaticConstructionCount = 1;
 DZE_DeathMsgGlobal = true;
