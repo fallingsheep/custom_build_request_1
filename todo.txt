@@ -2,20 +2,23 @@
 	TODO
 --------------
 banking system
-Door management
-Plot management
-Group management
-Plot 4 Life
-Snap Pro
 Takes clothes
-Vectors
 Vehicle Service points
 Arrest / investigate
 
+--------------------------------------
+  Not compatibale with other scripts
+--------------------------------------
+Build Vectors
 
 --------------
 	DONE
 --------------
+Plot management
+Door management
+Group management
+Plot 4 Life
+Snap Pro
 Claim vehicle - master key
 Safezones
 Tow + Lift
@@ -32,6 +35,7 @@ self bloodbag
 Cannibalism 
 Custom Loot
 
+
 BATTLEYE STUFF
 setvariable.txt 
 add to first line !="isburied"
@@ -46,3 +50,47 @@ Delete this from AH.sqf:
 lbsetpicture='no';
 Also delete lbsetpicture from the functions restored check (_FRC):
 'lbsetpicture',
+
+1. In AHConfig.sqf add 55510 to allowed dialogs:
+Code (Text):
+_ALLOWED_Dialogs = [-1,106, ... ,55510];
+2. In AH.sqf find and delete these statements:
+playableUnits = [player]; (two occurrences)
+lbsetpicture='no';
+lbSetData='no';
+createMarkerLocal='no';
+setMarkerTextLocal='no';
+setMarkerTypeLocal='no';
+setMarkerColorLocal='no';
+
+Find and delete these from the FNCRestored check (_FRC):
+'lbsetpicture',
+'lbSetData',
+'createMarkerLocal',
+'setMarkerTextLocal',
+'setMarkerTypeLocal',
+'setMarkerColorLocal',
+
+3. In AH.sqf find this line:
+Code (Text):
+        admin_fnc_esp = {
+Add this directly above it:
+#include "dzgmAdminESPicons.sqf"
+
+Then put the dzgmAdminESPicons.sqf file in your dayz_server\init folder. Note these limitations of the above ESP.
+
+4. In AHconfig.sqf set _CUF = false; Note this is temporary until the final OA patch is released which fixes the CU RE exploit.
+
+
+If you're running Infistar Antihack, add this to the dialogs array;
+
+711195, 41144
+And this to the '_cMenu =' section
+"DoorManagement","Entercode"
+
+If you're running Infistar Antihack, add this to the dialogs array;
+
+711194
+And this to the '_cMenu =' section
+
+"PlotManagement"

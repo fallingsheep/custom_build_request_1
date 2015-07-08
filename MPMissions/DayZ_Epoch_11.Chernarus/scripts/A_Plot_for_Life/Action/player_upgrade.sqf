@@ -152,7 +152,15 @@ if ((count _upgrade) > 0) then {
 			publicVariableServer "PVDZE_obj_Swap";
 
 			player reveal _object;
-			
+			_friendUID = getPlayerUID player;
+			_friendName = name  player;
+			_friends = [[_friendUID,_friendName]] ; 
+
+
+			_object setVariable ["doorfriends", _friends, true];
+			PVDZE_veh_Update = [_object,"gear"];
+			publicVariableServer "PVDZE_veh_Update";
+			PVDZE_veh_Update call server_updateObject;
 		} else {
 		
 			{player addMagazine _x;} count _temp_removed_array;

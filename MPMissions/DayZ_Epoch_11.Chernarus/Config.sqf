@@ -3,6 +3,24 @@
 //	Created by - Fallingsheep	//
 //////////////////////////////////
 
+
+//////////////////////////////////
+//			ADMINS				//
+//////////////////////////////////
+
+//Super Admins 
+SUPERADMINS = ["1234567890","11111111"];
+//super admins dont need to be added to each list below just the super admin list
+
+//Admins for Plot Management
+PLOTMANAGEMENTADMINS = ["1234567890","111111111"];
+
+//Admins for Door Management
+DOORMANGEMENTADMINS  = ["1234567890","111111111"];
+
+///////////////////////////////////
+//			  CONFIG			 //
+///////////////////////////////////
 //Maximun amount of random vehicle to spawn
 MaxVehicleLimit = 300;
 
@@ -60,6 +78,10 @@ dayz_fullMoonNights = true;
 //////////////////////////////////////////////////////////////
 //	DO NOT EDIT BELOW THIS LINE DOING SO CAN BREAK SCRIPTS!	//
 //////////////////////////////////////////////////////////////
+
+PLOTMANAGEMENTADMINS = PLOTMANAGEMENTADMINS + SUPERADMINS;
+DOORMANGEMENTADMINS = DOORMANGEMENTADMINS + SUPERADMINS;
+
 ELE_MaxRange = 100;
 ELE_Speed = 5;
 ELE_StopWaitTime = 0;

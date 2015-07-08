@@ -59,7 +59,8 @@ if (!isDedicated) then {
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
 	//ESSV2
 	execVM "spawn\start.sqf";
-	
+	//DZGM
+	execVM "dzgm\init.sqf";
 	//anti Hack
 	[] execVM "\z\addons\dayz_code\system\antihack.sqf";
 

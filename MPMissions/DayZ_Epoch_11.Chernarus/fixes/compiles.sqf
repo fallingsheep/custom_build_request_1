@@ -37,7 +37,23 @@ if (!isDedicated) then {
 	player_removeNet = {
 		[["DesertLargeCamoNet","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ"], 5,"str_epoch_player_8"] call player_removeNearby;
 	};
-
+/*DoorManagement Zupa*/	
+	DoorGetFriends 		= compile preprocessFileLineNumbers "doorManagement\doorGetFriends.sqf";
+	DoorNearbyHumans 	= compile preprocessFileLineNumbers "doorManagement\doorNearbyHumans.sqf";
+	DoorAddFriend 		= compile preprocessFileLineNumbers "doorManagement\doorAddFriend.sqf";
+	DoorRemoveFriend 	= compile preprocessFileLineNumbers "doorManagement\doorRemoveFriend.sqf";
+	player_unlockDoor       = compile preprocessFileLineNumbers "doorManagement\player_unlockDoor.sqf";
+	player_unlockDoorCode = compile preprocessFileLineNumbers "doorManagement\player_unlockDoorCode.sqf";
+	player_manageDoor       = compile preprocessFileLineNumbers "doorManagement\initDoorManagement.sqf";
+	player_enterCode       = compile preprocessFileLineNumbers "doorManagement\player_enterCode.sqf";
+	player_changeCombo = compile preprocessFileLineNumbers "doorManagement\player_changeCombo.sqf"; 
+	/*DoorManagement End*/
+	/*Plot*/
+	PlotGetFriends      = compile preprocessFileLineNumbers "plotManagement\plotGetFriends.sqf";
+	PlotNearbyHumans    = compile preprocessFileLineNumbers "plotManagement\plotNearbyHumans.sqf";
+	PlotAddFriend       = compile preprocessFileLineNumbers "plotManagement\plotAddFriend.sqf";
+	PlotRemoveFriend    = compile preprocessFileLineNumbers "plotManagement\plotRemoveFriend.sqf";
+	/*Plot End*/
 	player_login = {
 		private ["_unit","_detail","_PUID"];
 		_unit = _this select 0;
@@ -48,15 +64,12 @@ if (!isDedicated) then {
 		};
 	};
 
-	player_unlockDoor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
-	player_changeCombo =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_changeCombo.sqf";
-
 	player_lockVault =			compile preprocessFileLineNumbers "scripts\A_Plot_for_Life\Compile\player_lockVault.sqf";
 	player_updateGui =			compile preprocessFileLineNumbers "scripts\A_Plot_for_Life\Compile\player_updateGui.sqf";
 	player_crossbowBolt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
 	player_music = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music
 	player_death =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_death.sqf";
-	player_switchModel =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_switchModel.sqf";
+	player_switchModel =		compile preprocessFileLineNumbers "fixes\player_switchModel.sqf";
 	player_checkStealth =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_checkStealth.sqf";
 	world_sunRise =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_sunRise.sqf";
 	world_surfaceNoise =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_surfaceNoise.sqf";

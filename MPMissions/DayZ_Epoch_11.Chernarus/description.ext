@@ -87,6 +87,11 @@ class RscProgressNotFreeze
 	h = 0.039216;
 	texture = "#(argb,8,8,3)color(0,0,0,0)";
 };
+#include "dzgm\defines.hpp"
+class RscTitles
+{
+    #include "dzgm\icons.hpp"
+};
 //
 // the loading screen itself
 //
@@ -170,3 +175,12 @@ class CfgSounds
 #include "fixes\extra_rc.hpp"
 //Snap pro
 #include "scripts\snap_pro\snappoints.hpp"
+//DZGM
+#include "dzgm\groupManagement.hpp"
+//Door Management
+#include "doorManagement\defines.hpp"
+#include "doorManagement\doorUnlock.hpp"
+#include "doorManagement\doorManagement.hpp"
+#include "doorManagement\ComboLockUI.hpp"
+//Plot Management
+#include "plotManagement\plotManagement.hpp"
