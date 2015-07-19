@@ -677,8 +677,34 @@ if(_isModularDoor) then {
 		s_player_lockvault = -1;
 	};
 
+	//----------------Detain--------------------------------------------------------------------------
+	//Player Detain, Search, Release
+    if (_isMan and _isAlive and !inSafeZone and !_isZombie and !_isAnimal && !(_traderType in serverTraders)) then {
+        if (s_player_investo < 0) then {
+            s_player_investo = player addAction [("<t color='#ffa500'>")+("Detain")+("</t>"), "scripts\investigation\Detain.sqf",cursorTarget, 5, false, true, "",""];
+        };
+        if (s_player_investoTwo < 0) then {
+            s_player_investoTwo = player addAction [("<t color='#ffa500'>")+("Search")+("</t>"), "scripts\investigation\Search.sqf",cursorTarget, 5, false, true, "",""];
+        };
+        if (s_player_investoThree < 0) then {
+            s_player_investoThree = player addAction [("<t color='#ffa500'>")+("Escort")+("</t>"), "scripts\investigation\Escort.sqf",cursorTarget, 5, false, true, "",""];
+        };
+        if (s_player_investoFour < 0) then {
+            s_player_investoFour = player addAction [("<t color='#ffa500'>")+("Release")+("</t>"), "scripts\investigation\Release.sqf",cursorTarget, 5, false, true, "",""];
+        };
+    } else {
+        player removeAction s_player_investo;
+        s_player_investo = -1;
+        player removeAction s_player_investoTwo;
+        s_player_investoTwo = -1;
+        player removeAction s_player_investoThree;
+        s_player_investoThree = -1;
+        player removeAction s_player_investoFour;
+        s_player_investoFour = -1;
+    };
+//------------------------------------------------------------------------------------------------
 	
-
+	
     //Player Deaths
 	if(_typeOfCursorTarget == "Info_Board_EP1") then {
 		if (s_player_information < 0) then {
@@ -834,6 +860,19 @@ if(_isModularDoor) then {
 		player removeAction s_player_sleep;
 		s_player_sleep = -1;
 	};
+	
+	
+	        _clothesTaken = _cursorTarget getVariable["clothesTaken",false];
+
+    // Take clothes by Zabn
+    if (_isMan and !_isAlive and !_isZombie and !_clothesTaken) then {
+        if (s_player_clothes < 0) then {
+            s_player_clothes = player addAction [("<t color='#0096ff'>")+("Take Clothes")+("</t>"), "scripts\player_takeClothes_v2.sqf",[_cursorTarget], -10, false, true, "",""];
+        };
+    } else {
+        player removeAction s_player_clothes;
+        s_player_clothes = -1;
+    };
 	
 	//Repairing Vehicles
 	if ((dayz_myCursorTarget != _cursorTarget) && _isVehicle && !_isMan && _hasToolbox && (damage _cursorTarget < 1) && !_isDisallowRepair) then {
@@ -1072,6 +1111,18 @@ if(_isModularDoor) then {
 	s_player_manageDoor = -1;
 	player removeAction s_player_plotManagement;
 	s_player_plotManagement = -1;
+	
+	player removeAction s_player_clothes;
+    s_player_clothes = -1;
+	
+	player removeAction s_player_investo;
+    s_player_investo = -1;
+    player removeAction s_player_investoTwo;
+    s_player_investoTwo = -1;
+    player removeAction s_player_investoThree;
+    s_player_investoThree = -1;
+    player removeAction s_player_investoFour;
+    s_player_investoFour = -1;
 };
 
 // ----------------------------- / Drink water \ ----------------------

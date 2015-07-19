@@ -2,8 +2,6 @@
 	TODO
 --------------
 banking system
-Takes clothes
-Vehicle Service points
 Arrest / investigate
 
 --------------------------------------
@@ -14,6 +12,8 @@ Build Vectors
 --------------
 	DONE
 --------------
+Takes clothes
+Vehicle Service points
 Plot management
 Door management
 Group management

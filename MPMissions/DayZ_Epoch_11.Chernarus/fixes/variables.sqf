@@ -280,6 +280,10 @@ dayz_resetSelfActions = {
 	s_player_drinkWater = -1;
 	s_player_manageDoor = -1;
 	s_player_plotManagement = -1;
+    s_player_investo = -1;
+    s_player_investoTwo = -1;
+    s_player_investoThree = -1;
+    s_player_investoFour = -1;
 };
 call dayz_resetSelfActions;
 
