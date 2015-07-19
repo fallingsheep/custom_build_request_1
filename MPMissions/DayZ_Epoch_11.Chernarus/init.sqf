@@ -75,6 +75,9 @@ if (!isDedicated) then {
 	
 	//Claim vehicles
 	_nil = [] execVM "scripts\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
+	
+	//Service Points
+	execVM "scripts\service_point\service_point.sqf";
 };
 
 #include "\z\addons\dayz_code\system\REsec.sqf"
